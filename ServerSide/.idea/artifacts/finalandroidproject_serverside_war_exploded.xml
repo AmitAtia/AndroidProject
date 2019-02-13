@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="finalandroidproject_serverside:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/finalandroidproject_serverside_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="finalandroidproject_serverside/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="finalandroidproject_serverside" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="C:/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47-bin.jar" />
+        </element>
+      </element>
+      <element id="library" level="project" name="Java EE 6-Java EE 6" />
+    </root>
+  </artifact>
+</component>

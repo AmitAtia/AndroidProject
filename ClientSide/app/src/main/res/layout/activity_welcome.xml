@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.finalandroidproject_clientside.WelcomeActivity"
+    android:background="@android:color/holo_green_dark">
+
+    <LinearLayout
+        android:id="@+id/welcomeLinearLayout"
+        android:paddingTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/usernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="@android:color/white"
+            android:text=""
+            android:layout_marginLeft="20dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImageLabel"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:rotation="-90"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@android:color/white"/>
+    </LinearLayout>
+    <Button
+        android:layout_below="@id/welcomeLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="LOGOUT"
+        android:onClick="btnLogoutClicked"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</RelativeLayout>
